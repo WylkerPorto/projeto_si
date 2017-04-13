@@ -1,4 +1,4 @@
 Sprint 4 – GameController – PlayerController – ScoreController - TimeController
 Sprint 5 – Jogo alpha (score – menu – sons) 
-Sprint 6 – Acesso de banco - index
-Sprint 7 – Jogo Beta - rank
+Sprint 6 – Acesso de banco - menu
+Sprint 7 – Jogo Beta
