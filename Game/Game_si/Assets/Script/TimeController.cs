@@ -9,7 +9,7 @@ public class TimeController : MonoBehaviour {
     void Start ()
     {
         text = GetComponent<Text>();
-        tempo = 99.0f;
+        tempo = 99f;
     }
 	
 	void Update () {
