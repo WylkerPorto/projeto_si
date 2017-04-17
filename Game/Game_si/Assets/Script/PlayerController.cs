@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour {
 	public ScoresController meuScore;
 
 	private float axis;
-	public float velocidade = 5;
-	public float forcaPulo = 600;
+	public float velocidade = 10;
+	public float forcaPulo = 1000;
 	private bool isGrounded;
 	private bool isRight;
 
@@ -45,6 +45,19 @@ public class PlayerController : MonoBehaviour {
 		} else if (i < 0 && isRight) {
 			isRight = !isRight;
 			transform.localScale = new Vector2 (-transform.localScale.x, transform.localScale.y);
+		}
+	}
+
+	public void OnCollisionEnter2D(Collision2D col)
+	{
+		if (col.gameObject.tag == "moeda") {
+			Destroy (col.gameObject);
+			meuScore.AumentaScore (5);
+		}
+		if (col.gameObject.tag == "Finish") {
+			if (transform.gameObject.tag == "Player") {
+				Application.LoadLevel (Application.loadedLevel);
+			}
 		}
 	}
 }
