@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -56,7 +57,8 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (col.gameObject.tag == "Finish") {
 			if (transform.gameObject.tag == "Player") {
-				Application.LoadLevel (Application.loadedLevel);
+				PlayerPrefs.SetInt ("Score", meuScore.GetScore());
+				SceneManager.LoadScene ("Score", LoadSceneMode.Single);
 			}
 		}
 	}
