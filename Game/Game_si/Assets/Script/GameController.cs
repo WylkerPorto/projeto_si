@@ -10,11 +10,12 @@ public class GameController : MonoBehaviour {
 	public float maxy = 15;
 	public float minz = 0;
 	public float maxz = 0;
-	public float lifeTime = 1;
+	public float death = 1;
+	private float lifeTime;
 
 	// Use this for initialization
 	void Start () {
-		
+		lifeTime = death;
 	}
 	
 	// Update is called once per frame
@@ -26,7 +27,7 @@ public class GameController : MonoBehaviour {
 		lifeTime -= Time.deltaTime;
 		if (lifeTime < 0) {
 			Instantiate (coin, new Vector3 (x, y, z), Quaternion.Euler(0, 0, 0));
-			lifeTime = 5;
+			lifeTime = death;
 		}
 		
 	}
