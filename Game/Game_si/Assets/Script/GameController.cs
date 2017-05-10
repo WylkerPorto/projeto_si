@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour {
 	public float maxy = 15;
 	public float minz = 0;
 	public float maxz = 0;
-	public float lifeTime = 5;
+	public float lifeTime = 1;
 
 	// Use this for initialization
 	void Start () {
