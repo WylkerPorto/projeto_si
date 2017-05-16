@@ -12,7 +12,6 @@ public class PosController : MonoBehaviour {
 		text = GetComponent<Text>();
 		score = PlayerPrefs.GetInt ("Score");
 		pontos (score);
-		print (score);
 	}
 	
 	// Update is called once per frame
