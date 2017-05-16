@@ -7,7 +7,10 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D rb;
 	public Transform ground;
 	public ScoresController meuScore;
-
+	public AudioSource sPulo;
+	public AudioSource sMoeda;
+	private int stados = 0;
+	private Animator anim;
 	private float axis;
 	public float velocidade = 10;
 	public float forcaPulo = 1000;
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		anim = GetComponent<Animator>();
 		isRight = true;
 		rb = GetComponent<Rigidbody2D> ();
 		rb.gravityScale = 3;
@@ -26,6 +30,9 @@ public class PlayerController : MonoBehaviour {
 		isGrounded = Physics2D.Linecast (this.transform.position, ground.position, 1<<LayerMask.NameToLayer("chao"));
 		axis = Input.GetAxisRaw ("Horizontal");
 
+		if (axis == 0 && isGrounded) {
+			stados = 0;
+		} 
 		if (axis > 0) {
 			transform.Translate (Vector2.right * velocidade * Time.deltaTime);
 			flip (1);
@@ -35,17 +42,28 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (Input.GetButtonDown ("Jump") && isGrounded) {
+			sPulo.Play ();
+			stados = 3;
 			rb.AddForce (transform.up * forcaPulo);
 		}
+
+		animar ();
+	}
+
+	void animar(){
+		anim.SetInteger ("state", stados);
 	}
 
 	void flip(int i){
-		if (i > 0 && !isRight) {
-			isRight = !isRight;
-			transform.localScale = new Vector2 (-transform.localScale.x, transform.localScale.y);
-		} else if (i < 0 && isRight) {
-			isRight = !isRight;
-			transform.localScale = new Vector2 (-transform.localScale.x, transform.localScale.y);
+		if (isGrounded) {
+			stados = 2;
+			if (i > 0 && !isRight) {
+				isRight = !isRight;
+				transform.localScale = new Vector2 (-transform.localScale.x, transform.localScale.y);
+			} else if (i < 0 && isRight) {
+				isRight = !isRight;
+				transform.localScale = new Vector2 (-transform.localScale.x, transform.localScale.y);
+			}
 		}
 	}
 
@@ -53,6 +71,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "moeda") {
 			Destroy (col.gameObject);
+			sMoeda.Play ();
 			meuScore.AumentaScore (5);
 		}
 		if (col.gameObject.tag == "Finish") {

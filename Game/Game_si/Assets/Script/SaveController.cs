@@ -9,10 +9,11 @@ public class SaveController : MonoBehaviour {
 	public InputField NomeField = null;
 	public Transform Button = null;
 	private string url = "http://localhost:8080/s7/SI/projeto_si/Game/Game_si/Assets/Script/Login.php";
+	public AudioSource sWin;
 
 	// Use this for initialization
 	void Start () {
-		
+		sWin.Play ();
 	}
 	
 	// Update is called once per frame

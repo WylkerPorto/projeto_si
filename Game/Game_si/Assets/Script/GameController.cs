@@ -12,9 +12,11 @@ public class GameController : MonoBehaviour {
 	public float maxz = 0;
 	public float death = 1;
 	private float lifeTime;
+	public AudioSource sInicio;
 
 	// Use this for initialization
 	void Start () {
+		sInicio.Play ();
 		lifeTime = death;
 	}
 	
