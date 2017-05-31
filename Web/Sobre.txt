@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Game Run</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	
+	<script type="text/javascript" src="prototype.js"></script>
+	<script type="text/javascript" src="scriptaculous.js"></script>
+	
+	<!-- script.aculo.us javascript framework from http://www.script.aculo.us -->
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="bannerhome">
+		
+			<div id="nav">
+			
+				<a href="index.html">Home</a>
+				<a href="sobre.html">Sobre</a>
+				<a href="ranking.html">Ranking</a>  </div>
+						
+		
+	  </div>
+		
+		<div class="col1">
+		
+			<div class="box" id="news">
+			
+				<h1 id="news_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+					
+				</div>
+				
+			</div>
+			
+			
+			<div class="box" id="events">
+			
+				<h1 id="events_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		
+		<div class="col2">
+			
+			<div class="box">
+				<h1>Screenshots</h1>
+				
+				<img src="./images/game1.png" width ="475px" height ="120px" />
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#"></a>
+					</span>
+				</div>
+								
+				<div class="content">
+				
+			
+				
+				
+				
+				</div>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="box">
+				<h1></h1>
+				
+				<img src="./images/game2.png" width = "475px" height = "120px"/>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#"></a>
+					</span>
+				</div>
+								
+				<div class="content">
+				
+					
+				
+				</div>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			<div class="box">
+				<h1></h1>
+				
+				<img src="./images/game3.png" width="475px" height = "120px"  />
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#"></a>
+					</span>
+				</div>
+								
+				<div class="content">
+				
+					
+				</div>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		<div class="col1">
+		
+			<div class="box" id="sponsors">
+			
+				<h1 id="sponsors_handle"></h1>
+				
+				<ul class="sponsors">
+					<li><a href="http://www.desiredmedia.nl"><img src="./images/sponsor_desired_media.jpg" alt="Desired Media" /></a></li>
+					<li><a href="http://www.subleme.net"><img src="./images/sponsor_subleme.jpg" alt="Subleme" /></a></li>
+					<li><a href="http://www.clantemplates.com"><img src="./images/sponsor_ct.jpg" alt="ClanTemplates" /></a></li>
+					<li><a href="http://www.uvshock.co.uk"><img src="./images/sponsor_uvshock.jpg" alt="uvSHOCK" /></a></li>
+				</ul>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+			
+			
+			<div class="box" id="affiliates">
+			
+				<h1 id="affiliates_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
+			
+			
+			<div class="box" id="items">
+			
+				<h1 id="items_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		<div id="actionrodape"><img src="./images/actionrodape.jpg"  width = "900px"/></div>
+		
+	
+</div>
+	
+	
+	
+	
+	
+	<script type="text/javascript">
+		new Draggable('news',{handle: 'news_handle'});
+		new Draggable('events',{handle: 'events_handle'});
+		new Draggable('sponsors',{handle: 'sponsors_handle'});
+		new Draggable('affiliates',{handle: 'affiliates_handle'});
+		new Draggable('items',{handle: 'items_handle'});
+	</script>
+	
+	
+	
+
+</body>
+</html>
