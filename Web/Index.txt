@@ -1,6 +1,4 @@
-pagina index.html
-
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -20,7 +18,7 @@ pagina index.html
 
 	<div id="container">
 	
-		<div id="">
+		<div id="bannerhome">
 		
 			<div id="nav">
 			
@@ -32,7 +30,16 @@ pagina index.html
 	  </div>
 		
 		<div class="col1">
-		
+			<div class="box" id="news">
+		   <h1 id="news_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
 			
 				<div class="bar">
 					<span>
@@ -46,7 +53,15 @@ pagina index.html
 			
 			
 			<div class="box" id="events">
-			
+			    <h1 id="events_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
 				
 				
 				<div class="bar">
@@ -66,7 +81,7 @@ pagina index.html
 			<div class="box">
 				<h1>O Jogo</h1>
 				
-				<img src="./images/banlogo.jpg" alt="Strive2Win" />
+				<img src="./images/game4.png" width = "430px" height = "120px"/>
 				
 				<div class="bar">
 					<span>
@@ -145,7 +160,12 @@ pagina index.html
 				
 				</div>
 				
-				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
 				
 			</div>
 			
@@ -157,6 +177,15 @@ pagina index.html
 		
 			<div class="box" id="sponsors">
 			
+				<h1 id="sponsors_handle"></h1>
+				
+				<ul class="sponsors">
+					<li><a href="http://www.desiredmedia.nl"><img src="./images/sponsor_desired_media.jpg" alt="Desired Media" /></a></li>
+					<li><a href="http://www.subleme.net"><img src="./images/sponsor_subleme.jpg" alt="Subleme" /></a></li>
+					<li><a href="http://www.clantemplates.com"><img src="./images/sponsor_ct.jpg" alt="ClanTemplates" /></a></li>
+					<li><a href="http://www.uvshock.co.uk"><img src="./images/sponsor_uvshock.jpg" alt="uvSHOCK" /></a></li>
+				</ul>
+				
 				
 				
 				<div class="bar">
@@ -170,7 +199,16 @@ pagina index.html
 			
 			
 			<div class="box" id="affiliates">
-			
+				
+			  <h1 id="affiliates_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
 
 				
 				<div class="bar">
@@ -183,11 +221,31 @@ pagina index.html
 			</div>
 			
 			
-			
+			<div class="box" id="items">
+			<h1 id="items_handle"></h1>
+				
+				<ul>
+					<li><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+					<li><a href="#4"></a></li>
+					<li><a href="#5"></a></li>
+				</ul>
+				
+				
+				
+				<div class="bar">
+					<span>
+						<span></span>
+						<a href="#" class="right"></a>
+					</span>
+				</div>
+				
+			</div>
 		
 		</div>
 		
-
+		<div id="actionrodape"><img src="./images/actionrodape.jpg"  width = "900px"/></div>
 	
 </div>
 	
@@ -208,6 +266,3 @@ pagina index.html
 
 </body>
 </html>
-
-
-
